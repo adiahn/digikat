@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#000066",
+        primary: "#111947",
         secondary: "rgb(0, 51, 153)",
         background: "#2121215e",
         background_2: "#22303c",
@@ -17,7 +17,11 @@ export default {
         text_color: "#333333",
         home_button: "#63BBFF"
       },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
 }
+

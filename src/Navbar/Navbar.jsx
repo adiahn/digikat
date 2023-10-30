@@ -1,6 +1,5 @@
  import logo from "../../public/logo.png";
-// import Button from "../Button";
-// import "./nav";
+ import "./nav";
 import React from 'react';
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { useState } from "react";
@@ -32,32 +31,32 @@ const Navbar = () => {
 
   return (
   
-       <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 px-16">
-      <a href="#">
-        <img className="w-[70px] h-[50px] sm:w-[50px]" src={logo} alt="logo" />
+       <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 px-16 ">
+      <a href="#" className="flex justify-center items-center gap-x-2">
+        <img className="w-[70px] h-[50px] sm:w-[50px]" src={logo} alt="logo" /><h1 className="font-[600] font-poppins text-[24px] line-[36px]">DIGIKAT</h1>
       </a>
 
         {/* Nav as */}
         <ul className="animation" data-nav-toggle={navToggle}>
           <div className="flex flex-col md:flex-row">
 
-          <a className="py-2 px-5  bg-home_button w-[100px] h-[40px] text-center rounded-[5px] text-gray"
+          <a className="py-2 px-5  bg-home_button font-[600] w-[100px]font-[600] h-[40px] text-center rounded-[5px] text-gray"
            onClick={closeNavLink}>
           Home
         </a> 
-        <a className="py-2 px-5  rounded-[7px]  text-gray text-center"
+        <a className="py-2 px-5  rounded-[7px] font-[600] text-black text-center"
           href="#" onClick={closeNavLink} >
           Programmes
         </a>
-        <a className="py-2 px-5 rounded-lg my-2 md:my-0  md:mr-4 mb-2 md:mb-0 text-center"
+        <a className="py-2 px-5 rounded-lg my-2 md:my-0 font-[600] text-black md:mr-4 mb-2 md:mb-0 text-center"
             onClick={closeNavLink}>
           Team
         </a>
-        <a className="py-2 px-5 rounded-lg my-2 md:my-0  md:mr-4 mb-2 md:mb-0 text-center"
+        <a className="py-2 px-5 rounded-lg my-2 md:my-0 font-[600] text-black md:mr-4 mb-2 md:mb-0 text-center"
             onClick={closeNavLink}>
          About Us
         </a> 
-        <a className="py-2 px-5  rounded-[7px]  text-gray text-center"
+        <a className="py-2 px-5  rounded-[7px]  font-[600] text-black text-center"
           href="#" onClick={closeNavLink}>
           Contact
         </a>
