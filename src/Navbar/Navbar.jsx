@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
   
-       <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 px-16 ">
+       <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 md:px-16 px-4">
       <a href="#" className="flex justify-center items-center gap-x-2">
         <img className="w-[70px] h-[50px] sm:w-[50px]" src={logo} alt="logo" /><h1 className="font-[600] font-poppins text-[24px] line-[36px]">DIGIKAT</h1>
       </a>
