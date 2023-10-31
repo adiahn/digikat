@@ -2,8 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="flex m-0 p-0 m-auto ">
-        <h1 className="text-[yellow] text-center">Test</h1>
+    <div className="flex flex-col ">
+        <h1 className="text-5xl text-center">ABOUT US</h1>
+        <div className="flex flex-wrap">
+
+        </div>
     </div>
   )
 }
