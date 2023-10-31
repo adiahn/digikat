@@ -1,5 +1,5 @@
- import logo from "../../public/logo.png";
- import "./nav";
+import logo from "../../public/logo.png";
+import "./nav";
 import React from 'react';
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { useState } from "react";

@@ -12,8 +12,6 @@ const header = () => {
     return (
         <m.header className="overflow-hidden relative mb-12  w-full" id="header">
              <div className="flex flex-col items-center justify-center text-center h-screen 2xl:h-auto 2xl:py-[10em] ">
-                
-        
           {/* h1 tag */}
           <h1 className=" text-white font-[900] uppercase text-[32px] lg:text-[8vw] xl:text-[108px] leading-[1.1]">
           {letter.map((L, i) => {
