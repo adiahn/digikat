@@ -7,7 +7,7 @@ import About from "./About/About"
 
 const App = () => {
   return(
-    <div className='box-border'>
+    <div>
       <Navbar />
       <Hero />
       <Overlay />
