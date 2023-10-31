@@ -17,7 +17,7 @@ export default function Information({ data }) {
         </div>
          <div className=" w-[100%] relative">
             <p className="text-[1rem] text-[#151515] leading-[1.1rem]  font-[600] h-full w-full p-[1rem]">{data.description}</p>
-            <div className="text-center"><button className="w-[150px] h-[40px] rounded-[10px] border-[3px] border-indigo-950">Click Me</button></div>
+            <div className="text-center"><button className="w-[150px] h-[40px] rounded-[10px] border-[3px] border-indigo-950">ENROL</button></div>
         </div> 
        </div>
     </div>
