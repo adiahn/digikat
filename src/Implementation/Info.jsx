@@ -1,5 +1,4 @@
 import React from "react";
-import { AiFillLinkedin, AiOutlineTwitter, AiOutlineWhatsApp } from "react-icons/ai";
 import {motion as m} from "framer-motion";
 
 export default function Info({ data }) {
@@ -11,17 +10,6 @@ export default function Info({ data }) {
       <div className="text-center">
         <div className="text-xl font-semibold text-gray-500">{data.name}</div>
         <div className="text-gray-500">{data.role}</div>
-      </div>
-      <div className=" mt-4 flex gap-3 middle">
-        <a href={data.linkedin} className="text-2xl">
-          <AiFillLinkedin />
-        </a>
-        <a href={data.twitter} className="text-2xl">
-          <AiOutlineTwitter />
-        </a>
-        <a href={data.whatsapp} className="text-2xl">
-          <AiOutlineWhatsApp />
-        </a>
       </div>
       </div>
     </m.div>
