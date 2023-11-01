@@ -24,17 +24,14 @@
    width: 16.5625rem;
    height: 22.0625rem;
   flex-shrink: 0;
-  border-radius: 1.25rem;
-border: 1px solid #8E8E8E;
 background: #ffffff;
 box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.19);
  }
  .overcard img {
-   width: 15rem;
-   height: 15.3125rem;
+   width: 20rem;
+   height: 10rem;
    flex-shrink: 0;
-   border-radius: 0.8125rem;
-   border: 1px solid #8E8E8E;
+  margin:auto;
    
  }
  
