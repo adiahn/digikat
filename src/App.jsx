@@ -4,6 +4,8 @@ import Hero from "./Hero/Hero";
 import Overlay from "./Overlay/Overlay"
 import About from "./About/About";
 import Project from "./Project/Project";
+import Implementation from './Implementation/Implementation';
+
 
 
 const App = () => {
@@ -14,6 +16,7 @@ const App = () => {
       <Overlay />
       <About />
       <Project />
+      <Implementation />
     </div>
   );
 }

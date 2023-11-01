@@ -1,0 +1,52 @@
+
+[
+  {
+    "image": "/caro_img.png",
+    "name": "Abdurrahman Mustapha",
+    "role": "Lead, Training & Seminars",
+    "linkedin": "https://www.linkedin.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "whatsapp": "https://wa.me/1234567890"
+  },
+  {
+    "image": "/caro_img.png",
+    "name": "Usman Ishaq Karofi",
+    "role": "Project Coordinator",
+    "linkedin": "https://www.linkedin.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "whatsapp": "https://wa.me/1234567890"
+  },
+  {
+    "image": "/caro_img.png",
+    "name": "Muhammad Abbas Usman",
+    "role": "Lead, Monitoring and Evaluation",
+    "linkedin": "https://www.linkedin.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "whatsapp": "https://wa.me/1234567890"
+  },
+  {
+    "image": "/caro_img.png",
+    "name": "Abdurrahman  Uthman",
+    "role": "Web Developer",
+    "linkedin": "https://www.linkedin.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "whatsapp": "https://wa.me/1234567890"
+  },
+  {
+    "image": "/caro_img.png",
+    "name": "Adnan Mukhtar",
+    "role": "Lead Developer",
+    "linkedin": "https://www.linkedin.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "whatsapp": "https://wa.me/1234567890"
+  },
+  {
+    "image": "/caro_img.png",
+    "name": "Sulaiman Mubarak",
+    "role": "UI/UX Designer",
+    "linkedin": "https://www.linkedin.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "whatsapp": "https://wa.me/1234567890"
+  }
+  ]
+  
