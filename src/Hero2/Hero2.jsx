@@ -10,12 +10,14 @@ const SimpleCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     appendDots: (dots) => (
       <div className="absolute bottom-0 left-0 right-0 flex m-auto justify-center mb-4">
-        <ul className="flex justify-center m-auto space-x-1 mb-8">{dots}</ul>
+        <ul className="flex justify-center m-auto mb-8">{dots}</ul>
       </div>
     ),
     
