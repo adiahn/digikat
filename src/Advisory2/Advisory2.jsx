@@ -21,7 +21,7 @@ const Item5 = () => {
           breakpoint: 1024, 
           settings: {
             slidesToScroll: 1,
-            slidesToShow: 3,
+            slidesToShow: 2,
           },
         },
         {
@@ -37,8 +37,8 @@ const Item5 = () => {
 
   return (
      
-    <section className='relative' > 
-    <Slider {...Settings} className=' w-[700px] rounded-[5px]'>
+    <section className='' > 
+    <Slider {...Settings} className='md:w-[700px] w-full rounded-[5px]'>
            {SMOOTH.map((data) => {
              return <Info data={data} key={data.id} />;
            })}

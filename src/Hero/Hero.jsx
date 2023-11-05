@@ -11,9 +11,9 @@ const header = () => {
     const websiteName = "DIGIKAT";
     const letter = Array.from(websiteName);
     return (
-        <m.header className="overflow-hidden relative mb-12 h-screen  px-16 pt-[10%] w-full" id="header">
+        <m.header className="overflow-hidden relative md:mb-12 h-screen  md:px-16 px-4 md:pt-[10%] w-full" id="header" name='header'>
             <div className="" id="gg">
-            <div className="flex flex-col  justify-start w-[80%] h-full 2xl:h-auto ">      
+            <div className="flex flex-col  justify-start md:w-[80%] w-[100%] h-full 2xl:h-auto ">      
           {/* h1 tag */}
           <h1 className=" text-white font-[900] text-start uppercase text-[3rem] lg:text-[8vw] xl:text-[108px] leading-[1.1]">
           {letter.map((L, i) => {
@@ -37,14 +37,14 @@ const header = () => {
 
          {/* short information about Website */}
                         <m.p
-                        className="my-2 mb-6 opacity-0  py-4 lg:text-[3vw] xl:text-[36px] leading-tight font-poppins font-[500] text-[1rem] line-[2.7rem] text-white h-[8.625rem]  w-[full] text-start p-0"
+                        className="my-2 md:mb-6 opacity-0  py-4 lg:text-[3vw] xl:text-[36px] leading-tight font-poppins font-[500] text-[0.8rem] md:text-[1rem] line-[2.7rem] text-white h-[8.625rem]  w-[full] text-start p-0"
                         animate={{ opacity: [0, 1] }}
                         transition={{ duration: 1, delay: 0.1 }}>
                         The Digital Katsina State Project (#DIGIKAT) is a transformative initiative aimed at digitizing Katsina State.  
                         </m.p>
             <div className="mt-10 py-4"><Button label="READ MORE" width="150px" height="40px"  /></div>
              </div>
-             <div className="">
+             <div className="hidden md:block">
                <Hero2 />
              </div> 
             </div>
