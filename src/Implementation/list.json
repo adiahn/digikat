@@ -1,32 +1,32 @@
 
 [
   {
-    "image": "/caro_img.png",
+    "image": "/c.jpeg",
     "name": "Abdurrahman Mustapha",
     "role": "Lead, Training & Seminars"
   },
   {
-    "image": "/caro_img.png",
+    "image": "/d.jpeg",
     "name": "Usman Ishaq Karofi",
     "role": "Project Coordinator"
   },
   {
-    "image": "/caro_img.png",
+    "image": "/a.jpeg",
     "name": "Muhammad Abbas Usman",
     "role": "Lead, Monitoring and Evaluation"
   },
   {
-    "image": "/caro_img.png",
-    "name": "Abdurrahman  Uthman",
+    "image": "/x.jpeg",
+    "name": "Zainaab A. Sulaiman",
     "role": "Web Developer"
   },
   {
-    "image": "/caro_img.png",
+    "image": "/s2.jpeg",
     "name": "Adnan Mukhtar",
     "role": "Lead Developer"
   },
   {
-    "image": "/caro_img.png",
+    "image": "/s1.jpeg",
     "name": "Sulaiman Mubarak",
     "role": "UI/UX Designer"
   }

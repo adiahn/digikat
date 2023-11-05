@@ -1,12 +1,19 @@
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+} */
 .nav_active {
+
      
     background-color: #DADADA;
     backdrop-filter: blur(5px);
-    
+    color: #111947;
 
  }
- .nav_active.nav ul a {
-  color: white;
+ .nav_active.ul a {
+  color: #111947;
  }
  .over {
    position: relative;
@@ -34,6 +41,39 @@ box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.19);
   
    
  }
+ .overcard2 {
+  width:100%;
+  background:gray;
+  padding: 1rem;
+  width: 16.5625rem;
+  height: 22.0625rem;
+ flex-shrink: 0;
+background: #ffffff;
+box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.19);
+}
+.overcard2 img {
+  width: 20rem;
+  height: 70%;
+  flex-shrink: 0;
+  
+}
+.overcard3 {
+  width: 10.5625rem;
+  height: 7.5625rem;
+ flex-shrink: 0;
+}
+.overcard3 img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+
+ 
+  
+}
+
+#foot {
+  transform: translate(100%, 0);
+}
 
 
 
@@ -42,7 +82,7 @@ box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.19);
 
  @media (max-width: 768px) {
   nav ul {
-    @apply hidden flex-col text-center bg-[#f2f2f2] p-4 rounded-lg absolute top-[5em] w-[93vw] h-[50vh];
+    @apply hidden flex-col text-center bg-[#f2f2f2] p-4 rounded-lg absolute top-[5em] w-[93vw] h-[50vh] z-50;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 
@@ -115,6 +155,13 @@ box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.19);
   display: grid;
   grid-template-columns: 65% 35%;
 }
+/* @media (min-width:768px) {
+  #gg {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+} */
+  
 /* #shit::before {
    content:"";
    position: absolute;
@@ -138,3 +185,42 @@ box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.19);
   
 
 } */
+#grape {
+  background-image: url(../public/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover {
+  color: #111947;
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.scrolled {
+  color: #ffcc00;
+}

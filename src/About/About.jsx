@@ -1,31 +1,23 @@
-import React from 'react'
-import He from "./he.jpeg"
+
+import React from 'react';
+import about from '../../public/hero.png';
 
 const About = () => {
   return (
-    <div className='flex flex-col w-full'>
-        <h1 className='text-5xl text-center'>ABOUT</h1>
-        <div className='flex flex-row flex-wrap justify-between p-5'>
-            <section className='w-8/12 h-96'>
-                <p className='text-lg text-justify p-5'><span className='text-2xl font-bold'>"DIGIKAT" </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nesciunt magni 
-                    molestias tenetur incidunt ea quasi laudantium tempora aperiam dolor eveniet, 
-                    reiciendis dolore perspiciatis facilis repellendus aut totam suscipit ducimus!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nesciunt magni 
-                    molestias tenetur incidunt ea quasi laudantium tempora aperiam dolor eveniet, 
-                    reiciendis dolore perspiciatis facilis repellendus aut totam suscipit ducimus!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nesciunt magni 
-                    molestias tenetur incidunt ea quasi laudantium tempora aperiam dolor eveniet, 
-                    reiciendis dolore perspiciatis facilis repellendus aut totam suscipit ducimus!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nesciunt magni 
-                    molestias tenetur incidunt ea quasi laudantium tempora aperiam dolor eveniet, 
-                    reiciendis dolore perspiciatis facilis repellendus aut totam suscipit ducimus!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nesciunt magni 
-                    molestias tenetur incidunt ea quasi laudantium tempora aperiam dolor eveniet, 
-                    reiciendis dolore perspiciatis facilis repellendus aut totam suscipit ducimus!
+    <div className='flex flex-col  md:px-16 mx-4 relative' id='about' name='about'>
+       <div className="flex flex-col justiy-center items-center m-auto md:w-1/2">
+            <div className="text-center  mb-12 ">
+               <p className="text-[3em] font-bold text_gradient text-primary font-poppins">About</p>
+           </div>
+          </div>
+        <div className='flex md:flex-row flex-wrap flex-col justify-between md:p-5 px-4'>
+            <section className=' md:w-1/2 w-full md:h-96 h-full'>
+                <p className="text-indigo-950 text-justify md:text-xl text-lg font-[700] font-['Poppins'] md:leading-[48px] leading-8 md:tracking-wide tracking-normal"><span className="text-indigo-950 text-[64px] font-[700] font-['Poppins'] md:leading-[48px] leading-4 md:tracking-[2.56px] tracking-normal">"DIGIKAT" </span>
+                ‘’DIGIKAT’’ The Digital Katsina State Project (#DIGIKAT) is a transformative initiative aimed at digitizing Katsina State, Nigeria, with the ultimate goal to educate, empower and upskill, the project aimed to make individual and groups be digital. Also, it aims to improve public services by making public servants computer literate and improving their productivity, develop efficient trade mechanisms, and establish technology and digital transformation rather of individual and groups. 
                     </p>
             </section>
-            <section className='w-4/ flex justify-center'>
-                <img src={He} alt="" className='w-8/12 rounded-sm'/>
+            <section className='md:w-1/2 w-full gap-4 md:block hidden'>
+              <img src={about} alt="" />
             </section>
         </div>
     </div>
