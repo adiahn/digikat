@@ -1,8 +1,8 @@
  import logo from "../../public/logo.png";
- import "./nav";
+//  import "./nav";
 import React from 'react';
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import { useState, useEffect } from "react";
+import { RiMenu3Line, RiCloseLine, RiSearch2Line } from "react-icons/ri";
+import { useState, useEffect} from "react";
 import { Link } from 'react-scroll';
 
 
@@ -13,33 +13,10 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
 
-
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const icon = document.getElementById('menuIcon');
-
-      // Check if the scroll position is beyond 100vh
-      const isScrolled = window.scrollY > window.innerHeight;
-
-      // Add or remove the 'scrolled' class based on the scroll position
-      icon.classList.toggle('scrolled', isScrolled);
-    };
-
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []); 
-
-
-
+ 
   const [navIcons, setNavIcons] = useState(<RiMenu3Line />);
   const [navToggle, setNavToggle] = useState("false");
+  const [showSearchBar, setShowSearchBar] = useState(false);
 
  //  Open Navbar Links > 768px
    const openNavLink = () => {
@@ -49,23 +26,45 @@ const Navbar = () => {
   //Close Navbar Links > 768px
   const closeNavLink = () => {
     setNavToggle("false");
-    setNavIcons(<RiMenu3Line className="text-white scrolled "/>);
+    setNavIcons(<RiMenu3Line className="text-white"/>);
+  };
+  const toggleSearchBar = () => {
+    setShowSearchBar((prev) => !prev);
   };
   //Function for closing and opening
   const navTogglingFunction = () => {
     navToggle == "false" ? openNavLink() : closeNavLink();
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector('nav');
+      const scrollY = window.scrollY;
+
+      if (scrollY >= 10) {
+        navbar.classList.add('nav_active');
+      } else {
+        navbar.classList.remove('nav_active');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array to run the effect only once on mount
+
+
   return (
     
-  
-       <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 md:px-16 px-4">
+  <div>
+       <nav className={`w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 md:px-16 px-4 ${showSearchBar ? 'nav-blur' : ''}`}>
       <a href="#" className="flex justify-center items-center gap-x-2">
         <img className="w-[70px] h-[50px] sm:w-[50px]" src={logo} alt="logo" /><h1 className="font-[600] font-poppins text-white text-[24px] line-[36px]">DIGIKAT</h1>
       </a>
 
         {/* Nav as */}
-        <ul className="animation" data-nav-toggle={navToggle}>
+        <ul className={`animation ${navToggle ? 'active' : ''}`}>
           <div className="flex flex-col md:flex-row">
 
           <a className="py-2 px-5  bg-home_button font-[600] w-[100px]font-[600] h-[40px] text-center rounded-[5px] text-gray"
@@ -97,6 +96,10 @@ const Navbar = () => {
           href="#contact" onClick={closeNavLink}>
           <Link to="contact" smooth={true} duration={500}>Contact</Link>
         </a>
+        <a className="py-2 px-5  font-[600] w-[100px]font-[600] h-[40px] text-center "
+           onClick={toggleSearchBar} >
+           <RiSearch2Line className={`text-white ${window.scrollY >= 100 ? 'search-active' : ''}`} size={20}/>
+        </a>  
           </div>  
       </ul>
       
@@ -105,6 +108,25 @@ const Navbar = () => {
       {navIcons}
       </div>
     </nav>
+    {/* {showSearchBar && (
+      <div className="">
+        <div className="search-overlay fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40"></div>
+        
+        </div>
+       
+     
+      )} */}
+       {showSearchBar && (
+        <div className="search-bar-wrapper fixed top-[80px] w-full bg-white p-4 z-50" ref={searchRef}>
+          {/* Your search bar content goes here */}
+          <input
+            type="text"
+            placeholder="Search..."
+            className="w-full p-2 border border-gray-300 rounded"
+          />
+        </div>
+      )}
+  </div>
     
   );
   };

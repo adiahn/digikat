@@ -32,10 +32,10 @@ function Advisory() {
   return (
     <div className="w-full md:h-[250px] h-[50vh] bg-indigo-200 bg-opacity-80 flex md:flex-row  flex-col mt-[5%] items-center relative md:px-0 px-4" name='Advisory' id='advisory'>
             <div className="flex flex-col w-full md:w-1/2 p-2 ">
-               <p className="text-[1.5em] font-bold text_gradient text-center font-poppins text-primary z-0">Advisory Board</p>
-               <p className="text-center md:w-[60%] w-full text-xl font-[700] text-primary font-poppins m-auto py-2 z-50">This is our stellar panel of advisors that bring diverse perspective and expertise and also lends their wisdom and guidance to the success of the project</p>
+               <p className="text-[1.5em] font-bold text_gradient text-center font-poppins text-primary ">Advisory Board</p>
+               <p className="text-center md:w-[60%] w-full text-xl font-[700] text-primary font-poppins m-auto py-2">This is our stellar panel of advisors that bring diverse perspective and expertise and also lends their wisdom and guidance to the success of the project</p>
            </div>
-           <img src={map2} alt="" className='absolute w-full h-full object-contain z-0' />
+           <img src={map2} alt="" className='absolute w-full md:h-full h-2/3 opacity-40 object-contain ' />
            <div className="md:w-1/2 w-full">
             <Advisory2 />
            </div>
