@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     
   <div>
-       <nav className={`w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 md:px-16 px-4 ${showSearchBar ? 'nav-blur' : ''}`}>
+       <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 md:px-16 px-4">
       <a href="#" className="flex justify-center items-center gap-x-2">
         <img className="w-[70px] h-[50px] sm:w-[50px]" src={logo} alt="logo" /><h1 className="font-[600] font-poppins text-white text-[24px] line-[36px]">DIGIKAT</h1>
       </a>
@@ -96,10 +96,10 @@ const Navbar = () => {
           href="#contact" onClick={closeNavLink}>
           <Link to="contact" smooth={true} duration={500}>Contact</Link>
         </a>
-        <a className="py-2 px-5  font-[600] w-[100px]font-[600] h-[40px] text-center "
+        {/* <a className="py-2 px-5  font-[600] w-[100px]font-[600] h-[40px] text-center "
            onClick={toggleSearchBar} >
            <RiSearch2Line className={`text-white ${window.scrollY >= 100 ? 'search-active' : ''}`} size={20}/>
-        </a>  
+        </a>   */}
           </div>  
       </ul>
       
@@ -116,16 +116,7 @@ const Navbar = () => {
        
      
       )} */}
-       {showSearchBar && (
-        <div className="search-bar-wrapper fixed top-[80px] w-full bg-white p-4 z-50" ref={searchRef}>
-          {/* Your search bar content goes here */}
-          <input
-            type="text"
-            placeholder="Search..."
-            className="w-full p-2 border border-gray-300 rounded"
-          />
-        </div>
-      )}
+      
   </div>
     
   );
