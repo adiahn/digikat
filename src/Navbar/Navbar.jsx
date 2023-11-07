@@ -64,7 +64,7 @@ const Navbar = () => {
       </a>
 
         {/* Nav as */}
-        <ul className="animation" data-nav-toggle={navToggle} >
+        <ul className={`animation ${navToggle ? 'active' : ''}`}>
           <div className="flex flex-col md:flex-row">
 
           <a className="py-2 px-5  bg-home_button font-[600] w-[100px]font-[600] h-[40px] text-center rounded-[5px] text-gray"
