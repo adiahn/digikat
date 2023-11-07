@@ -32,12 +32,18 @@
 background: #ffffff;
 box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.19);
  }
+ @media (min-width: 768px) {
+  .overcard img {
+    width: 20rem;
+    height: 50%;
+    flex-shrink: 0;
+  }
+  
+}
  .overcard img {
    width: 20rem;
-   height: 50%;
+   height: 40%;
    flex-shrink: 0;
-  
-   
  }
  .overcard2 {
   width:100%;
@@ -222,3 +228,13 @@ box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.19);
 .search-active{
   color: red;
 }
+.social-icon {
+  font-size: 24px;
+  color: #333; /* Icon color */
+  transition: color 0.3s ease; /* Transition for color change */
+
+  &:hover {
+    color: #DCE2FD; /* Change color on hover */
+  }
+}
+

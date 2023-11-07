@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+
 
 
 export default function func({ data }) {
@@ -11,7 +11,11 @@ export default function func({ data }) {
         <div className="text-xl font-semibold text-gray-500">{data.name}</div>
         <div className="text-gray-500">{data.role}</div>
       </div>
-      <Button label="ENROL" width="150px" height="40px "  />
+      {/* <Button label="ENROL" width="150px" height="40px "  /> */}
+      <button  className="inline-block text-white text-[24px] sm:text-base px-6 md:px-8 py-2 bg-primary rounded-[7px] hover:shadow-md active:scale-90 duration-200 font-poppins font-[500]"
+    >
+     ENROL
+    </button>
       </div>
     </div>
   );
