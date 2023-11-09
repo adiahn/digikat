@@ -23,7 +23,6 @@
 // }
 
 // export default Implementation;
-import React from 'react';
 import map2 from '../../public/map2.png'
 import Advisory2 from '../Advisory2/Advisory2';
 

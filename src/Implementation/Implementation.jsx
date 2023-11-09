@@ -13,7 +13,7 @@ function Implementation() {
                 <div className="w-4 h-4 bg-indigo-100 rounded-full relative" id='shit'></div>
                </div> */}
            </div>
-            <p className="text-center text-xl font-[700] text-primary font-poppins">Meet our team.A group of forward thinkers pushing the boundaries of what is possible</p>
+            <p className="text-center text-xl font-[700] text-primary font-poppins">Meet our team. A group of forward thinkers pushing the boundaries of what is possible</p>
           </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 md:gap-y-40 place-items-center mt-[4rem] w-full">
         {teamData.map((member, index) => (

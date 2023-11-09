@@ -9,7 +9,7 @@ const Project = () =>  {
             <div className="text-center  mb-12 ">
                <p className="text-[3em] font-bold text_gradient font-poppins pt-16 text-primary ">PROJECT COMPONENTS </p>
            </div>
-            <p className="text-center text-primary font-[700]">Meet our team, A group of forward thinkers pushing the boundaries of what is possible</p>
+            <p className="text-center text-primary font-[700]">See the list of projects under this Project</p>
           </div>
           {/* card start */}
           <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-y-10 place-items-center mt-[4rem] md:w-[100%] w-full">

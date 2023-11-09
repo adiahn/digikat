@@ -1,6 +1,4 @@
- import logo from "../../public/logo.png";
-//  import "./nav";
-import React from 'react';
+import logo from "../../public/logo.png";
 import { RiMenu3Line, RiCloseLine, RiSearch2Line } from "react-icons/ri";
 import { useState, useEffect} from "react";
 import { Link } from 'react-scroll';

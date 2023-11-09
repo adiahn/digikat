@@ -16,18 +16,18 @@
     "role": "Lead, Monitoring and Evaluation"
   },
   {
+    "image": "/s2.jpeg",
+    "name": "Adnan Muhammad Mukhtar",
+    "role": "Lead, Developer"
+  },
+  {
     "image": "/x.jpeg",
     "name": "Zainaab A. Sulaiman",
-    "role": "Web Developer"
+    "role": "Lead Communication Unit"
   },
   {
-    "image": "/s2.jpeg",
-    "name": "Adnan Mukhtar",
-    "role": "Lead Developer"
-  },
-  {
-    "image": "/s1.jpeg",
-    "name": "Sulaiman Mubarak",
+    "image": "/Aisha.jpg",
+    "name": "Aisha Muhammad Aliyu",
     "role": "UI/UX Designer"
   }
   ]
