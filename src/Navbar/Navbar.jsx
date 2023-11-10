@@ -19,12 +19,12 @@ const Navbar = () => {
  //  Open Navbar Links > 768px
    const openNavLink = () => {
     setNavToggle("true");
-    setNavIcons(<RiCloseLine />);
+    setNavIcons(<RiCloseLine className="text-white"/>);
   };
   //Close Navbar Links > 768px
   const closeNavLink = () => {
     setNavToggle("false");
-    setNavIcons(<RiMenu3Line className="text-indigo-950"/>);
+    setNavIcons(<RiMenu3Line className="text-white"/>);
   };
   const toggleSearchBar = () => {
     setShowSearchBar((prev) => !prev);
@@ -67,32 +67,32 @@ const Navbar = () => {
 
           <a className="py-2 px-5  bg-white font-[600] w-[100px]font-[600] h-[40px] text-center rounded-[5px] text-gray"
            onClick={closeNavLink} >
-            <Link to="header" smooth={true} duration={500}>Home</Link>
+            <Link to="header" smooth={true} duration={500} onClick={closeNavLink} >Home</Link>
         </a> 
         <a className="py-2 px-5  rounded-[7px] font-[600] text-white text-center nav-link"
           onClick={closeNavLink} href='#programmes'>
-             <Link to="programmes" smooth={true} duration={500}>Programmes</Link>
+             <Link to="programmes" smooth={true} duration={500}onClick={closeNavLink} >Programmes</Link>
           
         </a>
         <a className="py-2 px-5 rounded-lg my-2 md:my-0 font-[600] text-white md:mr-4 mb-2 md:mb-0 text-center nav-link"
             onClick={closeNavLink} href='#team'>
-              <Link to="team" smooth={true} duration={500}>Team</Link>
+              <Link to="team" smooth={true} duration={500}onClick={closeNavLink} >Team</Link>
         </a>
         <a className="py-2 px-5 rounded-lg my-2 md:my-0 font-[600] text-white md:mr-4 mb-2 md:mb-0 text-center nav-link"
             onClick={closeNavLink} href="#about">
-        <Link to="about" smooth={true} duration={500}>About Us</Link>
+        <Link to="about" smooth={true} duration={500}onClick={closeNavLink} >About Us</Link>
         </a> 
         <a className="py-2 px-5 rounded-lg my-2 md:my-0 font-[600] text-white md:mr-4 mb-2 md:mb-0 text-center nav-link"
             onClick={closeNavLink} href="#advisory">
-          <Link to="advisory" smooth={true} duration={500}>Advisory Board</Link>
+          <Link to="advisory" smooth={true} duration={500}onClick={closeNavLink} >Advisory Board</Link>
         </a> 
         <a className="py-2 px-5  rounded-[7px]  font-[600] text-white text-center nav-link"
           href="#sponsors" onClick={closeNavLink}>
-         <Link to="sponsors" smooth={true} duration={500}>Sponsors</Link>
+         <Link to="sponsors" smooth={true} duration={500}onClick={closeNavLink} >Sponsors</Link>
         </a>
         <a className="py-2 px-5  rounded-[7px]  font-[600] text-white text-center nav-link"
           href="#contact" onClick={closeNavLink}>
-          <Link to="contact" smooth={true} duration={500}>Contact</Link>
+          <Link to="contact" smooth={true} duration={500}onClick={closeNavLink} >Contact</Link>
         </a>
         {/* <a className="py-2 px-5  font-[600] w-[100px]font-[600] h-[40px] text-center "
            onClick={toggleSearchBar} >
