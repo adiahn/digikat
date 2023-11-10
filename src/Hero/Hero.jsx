@@ -28,7 +28,7 @@ const header = () => {
                   delay: i * 0.05,
                   type: "spring",
                 }}>
-                {" "}
+                {""}
                 {L}{""}
               </m.span>
             );

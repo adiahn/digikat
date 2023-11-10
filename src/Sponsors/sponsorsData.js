@@ -21,8 +21,8 @@ const sponsorsData = [
     },
     {
       id: 5,
-      name: "pss",
-      logo: "./ptss.png"
+      name: "skills",
+      logo: "./skills.jpeg"
     },
     {
       id: 6,
